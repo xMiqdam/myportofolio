@@ -1,0 +1,107 @@
+.projects {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    padding: 6rem 2rem;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #ccd6f6;
+  }
+  .project-image img {
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Ukuran gambar untuk Apps Portofolio */
+  .project-image-apps img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .project-image-web img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .project-image-apps img,
+    .project-image-web img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  .project-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .project-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+  }
+  
+  .project-content {
+    flex: 1;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #64ffda;
+  }
+  
+  .project-description {
+    color: #8892b0;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tech-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  .tech-list li {
+    font-size: 0.9rem;
+    color: #a8b2d1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .project-item,
+    .project-item.reverse {
+      flex-direction: column;
+    }
+  }
+  
